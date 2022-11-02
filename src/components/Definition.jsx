@@ -69,7 +69,7 @@ function Definition() {
             </div>
             <div>
             {word.map((meaning) => {
-                return <p>
+                return <p key={uuidv4}>
 
                     {meaning.partOfSpeech} : {meaning.definitions[0].definition}
                     
@@ -84,7 +84,7 @@ function Definition() {
             </div>
             <div>
             {word.map((meaning) => {
-                return <p> {meaning.antonyms}
+                return <p key={uuidv4}> {meaning.antonyms}
                     
                     </p>
             })}
