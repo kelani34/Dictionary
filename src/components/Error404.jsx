@@ -1,8 +1,12 @@
 import React from 'react'
+import Dictionary from '../pages/Dictionary'
 
 function Error404() {
   return (
-    <div>Error404</div>
+    <>
+        <Dictionary />
+        <div>Error404</div>
+    </>
   )
 }
 
