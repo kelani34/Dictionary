@@ -4,10 +4,22 @@
     padding-right: 45px;
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (max-width: 900px){
     .dictionary-half{
         height: 30vh;
         border-right: dashed 2px #d1d1d1;
         padding-right: 45px;
+        height: 20vh;
+        width: 100%;
+        border: none;
+        text-align: center;
+        flex-wrap:wrap;
+    }
+    .output{
+        margin-left:0px !important;
+    }
+    form{
+        
+        justify-content: center;
     }
 }

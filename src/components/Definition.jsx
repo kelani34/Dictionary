@@ -57,12 +57,12 @@ function Definition() {
   return (
     <>
      <h1 className='text-lg font-bold text-center text-purple-800'>Kehlnai's Dictionary</h1>
-        <div className='flex space-x-10'>
+        <div className='flex flex-wrap space-x-10 justify-end'>
             <Dictionary />
-        <div>
+        <div className='output'>
          {word ? (
          <>
-         <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+         <div className='flex space-x-5 border-2 border-solid p-4 my-5'>
             <div>
             <h1>Meaning: </h1>
             </div>
@@ -77,7 +77,7 @@ function Definition() {
             </div>
           </div>
 
-          <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+          <div className='flex space-x-5 border-2 border-solid p-4 my-5'>
             <div>
             <h1>Antonyms: </h1>
             </div>
@@ -90,7 +90,7 @@ function Definition() {
             </div>
           </div>
 
-          <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+          <div className='flex space-x-5 border-2 border-solid p-4 my-5 mb-20'>
             <div>
             <h1>Synonyms: </h1>
             </div>
