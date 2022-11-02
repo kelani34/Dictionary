@@ -65,7 +65,11 @@ function Definition() {
          <h1>Meaning: </h1>
 
           {word.map((meaning) => {
-              return <p key={uuidv4}>{meaning.partOfSpeech} : {meaning.definitions[0].definition}</p>
+              return <p key={uuidv4}>
+                
+                {meaning.partOfSpeech} : {meaning.definitions[0].definition}
+                
+                </p>
           })}
           </>
           )
