@@ -4,6 +4,7 @@ import Dictionary from '../pages/Dictionary'
 function Error404() {
   return (
     <>
+    
         <Dictionary />
         <div>Error404</div>
     </>

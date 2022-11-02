@@ -44,7 +44,6 @@ function Definition() {
     return(
       <>
       <Error404 />
-      <Link to='/'>Go back and search</Link>
       </>
     )
   }
@@ -52,7 +51,6 @@ function Definition() {
     return(
       <>
       <h1> Something didn't go well </h1>
-      <Link to='/'>Go back and search</Link>
       </>
     )
   }
