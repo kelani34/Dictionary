@@ -93,11 +93,11 @@ function Definition() {
 
           <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
             <div>
-            <h1>Antonyms: </h1>
+            <h1>Synonyms: </h1>
             </div>
             <div>
             {word.map((meaning) => {
-                return <p> {meaning.antonyms}
+                return <p key={uuidv4}> {meaning.synonyms}
                     
                     </p>
             })}
