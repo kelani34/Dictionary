@@ -4,7 +4,7 @@ import Dictionary from '../pages/Dictionary'
 function Error404() {
   return (
     <>
-        <div className='flex space-x-4'>
+        <div className='flex flex-wrap justify-center space-x-4'>
             <Dictionary />
             <div>Word not Found</div>
         </div>
