@@ -4,9 +4,10 @@ import Dictionary from '../pages/Dictionary'
 function Error404() {
   return (
     <>
-    
-        <Dictionary />
-        <div>Error404</div>
+        <div className='flex space-x-4'>
+            <Dictionary />
+            <div>Word not Found</div>
+        </div>
     </>
   )
 }
