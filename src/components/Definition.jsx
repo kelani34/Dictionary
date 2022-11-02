@@ -56,6 +56,7 @@ function Definition() {
   }
   return (
     <>
+     <h1 className='text-lg font-bold text-center text-purple-800'>Kehlnai's Dictionary</h1>
         <div className='flex space-x-10'>
             <Dictionary />
         <div>
