@@ -14,7 +14,7 @@ function App() {
             <Routes>
               <Route path='/about' element={<About />} />
               <Route path='/' element={ <Dictionary /> } />
-              <Route path='/definition/:search' element={ <Definition /> } />
+              <Route path='/dictionary/:search' element={ <Definition /> } />
               <Route path='/not_found' element={<Error404 />} />
               <Route path='*' element={<Error404 />} />
             </Routes>
