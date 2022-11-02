@@ -32,7 +32,7 @@ function Definition() {
     })
     .then((data) => {
         console.log(data)
-        setWord(data[0])
+        setWord(data[0].meanings)
     })
     .catch((e) =>{
       console.log(e.message)
@@ -71,7 +71,20 @@ function Definition() {
             {word.map((meaning) => {
                 return <p>
 
-                    {meaning.meanings.partOfSpeech} : {meaning.meanings.definitions[0].definition}
+                    {meaning.partOfSpeech} : {meaning.definitions[0].definition}
+                    
+                    </p>
+            })}
+            </div>
+          </div>
+
+          <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+            <div>
+            <h1>Antonyms: </h1>
+            </div>
+            <div>
+            {word.map((meaning) => {
+                return <p> {meaning.antonyms}
                     
                     </p>
             })}
