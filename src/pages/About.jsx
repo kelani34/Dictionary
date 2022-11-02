@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <>
-    <h1></h1>
+    <h1 className='text-lg font-bold'>Kehlnai's Dictionary</h1>
 
     </>
   )
