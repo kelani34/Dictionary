@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useParams, useNavigate } from 'react-router-dom'
 import {v4 as uuidv4} from 'uuid'
+import Dictionary from '../pages/Dictionary'
 import Error404 from './Error404'
 function Definition() {
   const [word, setWord] = useState()
@@ -56,7 +57,11 @@ function Definition() {
   }
   return (
     <>
-    
+        <div className='flex space-x-10'>
+            <div>
+        <Dictionary />
+        </div>
+        <div>
          {word ? (
          <>
          <h1>Meaning: </h1>
@@ -69,6 +74,8 @@ function Definition() {
           : 
         <p>Loading...</p>
         }
+        </div>
+        </div>
     </>
   )
 }
