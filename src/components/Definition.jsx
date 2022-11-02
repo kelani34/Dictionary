@@ -43,7 +43,7 @@ function Definition() {
     return(
       <>
       <Error404 />
-      <Link to='/dictionary'>Go back and search</Link>
+      <Link to='/'>Go back and search</Link>
       </>
     )
   }
@@ -51,16 +51,14 @@ function Definition() {
     return(
       <>
       <h1> Something didn't go well </h1>
-      <Link to='/dictionary'>Go back and search</Link>
+      <Link to='/'>Go back and search</Link>
       </>
     )
   }
   return (
     <>
         <div className='flex space-x-10'>
-        <div className='dictionary-half'>
-        <Dictionary />
-        </div>
+            <Dictionary />
         <div>
          {word ? (
          <>

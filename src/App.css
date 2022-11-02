@@ -1,4 +1,5 @@
 .dictionary-half{
     height: 70vh;
-    border-right: 
+    border-right: dashed 2px #d1d1d1;
+    padding-right: 45px;
 }
