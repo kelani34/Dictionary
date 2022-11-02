@@ -31,7 +31,8 @@ function Definition() {
       return response.json()
     })
     .then((data) => {
-        setWord(data[0].meanings)
+        console.log(data)
+        setWord(data[0])
     })
     .catch((e) =>{
       console.log(e.message)
@@ -62,15 +63,33 @@ function Definition() {
         <div>
          {word ? (
          <>
-         <h1>Meaning: </h1>
+         <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+            <div>
+            <h1>Meaning: </h1>
+            </div>
+            <div>
+            {word.map((meaning) => {
+                return <p>
 
-          {word.map((meaning) => {
-              return <p key={uuidv4}>
-                
-                {meaning.partOfSpeech} : {meaning.definitions[0].definition}
-                
-                </p>
-          })}
+                    {meaning.meanings.partOfSpeech} : {meaning.meanings.definitions[0].definition}
+                    
+                    </p>
+            })}
+            </div>
+          </div>
+
+          <div className='flex space-x-5 border-2 border-solid p-4 m-5'>
+            <div>
+            <h1>Antonyms: </h1>
+            </div>
+            <div>
+            {word.map((meaning) => {
+                return <p> {meaning.antonyms}
+                    
+                    </p>
+            })}
+            </div>
+          </div>
           </>
           )
           : 
