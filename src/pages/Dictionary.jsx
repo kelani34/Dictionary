@@ -10,7 +10,7 @@ function Dictionary() {
     <form 
     className='flex flex-col w-max dictionary-half'
     onSubmit={(e) => {
-        navigate('/definition/' + word, {replace: true})
+        navigate('/definition/' + word)
         e.preventDefault()
     }}
     >
