@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../components/Header'
 
 function Dictionary() {
   return (
-    <div>Dictionary</div>
+    <>
+        <Header />
+    </>
   )
 }
 
