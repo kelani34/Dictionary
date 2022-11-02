@@ -58,7 +58,7 @@ function Definition() {
   return (
     <>
         <div className='flex space-x-10'>
-            <div>
+        <div className='border-dashed border-2 h-screen dictionary-half'>
         <Dictionary />
         </div>
         <div>
