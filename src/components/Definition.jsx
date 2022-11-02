@@ -18,9 +18,7 @@ function Definition() {
     .then((response) => {
       if (response.status === 404){
         setError404(true)
-      } else if (response.status === 401){
-        navigate('/login')
-      } else if (response.status === 500){
+      }  else if (response.status === 500){
         setError(true)
       }
 
