@@ -11,7 +11,6 @@ function Dictionary() {
     className='flex flex-col w-max dictionary-half'
     onSubmit={(e) => {
         navigate('/definition/' + word)
-        e.preventDefault()
     }}
     >
         <input 
